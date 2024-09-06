@@ -1,0 +1,92 @@
+.header {
+  background-color: #1e201e;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 100;
+}
+
+.navbar a {
+  position: relative;
+  font-size: 20px;
+  color: #f7efe5;
+  margin: 0px 10px;
+}
+
+/* navbar a::before คือระบุสิ่งที่เกิดขึ้นก่อนการกระทำข้างบน (.nav a) */
+.navbar a::before {
+  content: "";
+  position: absolute;
+  /* position: absolute; เพิ่มอนิเมชั่นของตำแหน่งนั้นโดยที่ไม่ทำให้เปลี่ยนแปลงไปจากเดิมมาก */
+  width: 0;
+  height: 2px;
+  background: #f7efe5;
+  top: 100%;
+  left: 0;
+  transition: 0.3s;
+  /* transition คือการเพิ่มอนิเมชั่นให้มีความสมูท */
+}
+/* คำสั่งนี้คือหากเอาอะไรไปชี้ก็จะเกิดการเปลี่ยนแปลงแต่ยังคงเดิม :: จะมีการซ้อนคำสั่งเพื่อให้ hover กระทำบางอย่างให้ before*/
+.navbar a:hover::before {
+  width: 100%;
+}
+
+.colorabout {
+  font-weight: 350;
+  font-style: normal;
+  color: #f7efe5;
+  background-color: #697565;
+  padding: 50px;
+  margin: auto;
+}
+
+.Footer {
+  background-color: #1e201e;
+  color: #f7efe5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  padding: 20px 0;
+  position: fixed;
+  /* fixed คือการล็อคตำแหน่งให้ตามscroll mouse */
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  box-sizing: border-box;
+}
+
+.box-contect {
+  display: flex;
+  flex-direction: column;
+}
+
+.box-contect a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f7efe5;
+  background-color: #1e201e;
+  margin: 5px 0px;
+  padding: 10px 0px;
+  transition: 0.3s;
+}
+
+.box-contect a:hover {
+  background-color: #f7efe5;
+  color: #1e201e;
+}
+
+.container {
+  margin-bottom: 50px;
+}
+
+/* magin = อนาเขตของpoject
+   padding = พื้นที่ของ poject */
