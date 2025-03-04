@@ -14,6 +14,7 @@ function App() {
     <nav className='navbar'>
         <a href="#About">About ABC76812</a>
         <a href="#Contect">Contect</a>
+        <a href="#new">New Menu</a>
     </nav>
     </header>
     <section id='About'>
