@@ -12,7 +12,7 @@ function App() {
     <>
     <header className='header'>
     <nav className='navbar'>
-        <a href="#About">About</a>
+        <a href="#About">About v2</a>
         <a href="#Contect">Contect</a>
     </nav>
     </header>
